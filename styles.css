@@ -1,0 +1,294 @@
+:root {
+  --color-gray: #393c41;
+  --mx-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  letter-spacing: 0.12rem;
+  word-spacing: 0.16rem;
+  line-height: 1.5rem;
+}
+
+main > header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 1000;
+}
+
+main > header > .inner-header {
+  max-width: var(--mx-width);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 60px;
+}
+
+main > header > .inner-header > a {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+
+main > header > .inner-header > a > img {
+  border-radius: 10px;
+  height: 120px;
+}
+
+main > header > .inner-header > nav {
+  width: 100%;
+}
+
+main > header > .inner-header > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main > header > .inner-header > nav > ul > li {
+  list-style-type: none;
+}
+
+main > header > .inner-header > nav > ul > li > a {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+}
+
+main > header > .inner-header > nav > ul > li > a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+main > header > .inner-header > nav > ul > li.vdivider {
+  padding: 0 20px;
+}
+
+main > header > .inner-header > h1 {
+  min-width: 50%;
+  padding-left: 143px;
+  font-weight: 700;
+  color: #004aac;
+  font-size: 26px;
+}
+
+.welcome-section,
+.software-services-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(186, 196, 250, 0.1), hwb(224 1% 79% / 0.9)),
+    url("./assets/image/wft-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.welcome-section {
+  background: linear-gradient(rgba(186, 196, 250, 0.1), hwb(224 1% 79% / 0.9)),
+    url(./assets/image/wft-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+}
+
+.welcome-section > .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: absolute;
+}
+
+.welcome-section > picture {
+  width: 100svw;
+  height: 100svh;
+  object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.welcome-section > .welcome-text > p {
+  font-size: 2vh;
+  font-weight: 600;
+  text-shadow: #021403 2px 0 4px;
+  text-align: center;
+  -webkit-text-stroke: 2px #053676;
+  font-weight: 600;
+  paint-order: stroke fill;
+  color: #eff3fa;
+}
+
+.welcome-section > .welcome-text {
+  color: #000d0e;
+  position: absolute;
+  max-width: var(--mx-width);
+  padding: 20px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: antiquewhite;
+  z-index: 101;
+  bottom: 0;
+}
+
+.software-services-section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  background: url(/assets/image//ux-design.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.software-services-section > .software-services-container {
+  max-width: var(--mx-width);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.software-services-section > .software-services-container > .ser-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  align-items: center;
+}
+
+.software-services-section > .software-services-container > .ser-box > h2 {
+  font-size: 20px;
+}
+
+.software-services-section > .software-services-container > .ser-box > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.welcome-section > .welcome-text > h1 {
+  font-size: 6vh;
+  margin-top: 0;
+  text-shadow: #021403 13px 0 11px;
+  text-align: center;
+  line-height: 8vh;
+  -webkit-text-stroke: 2px #004aac;
+  font-weight: 800;
+  paint-order: stroke fill;
+  margin-bottom: 20px;
+}
+
+.welcome-section > .welcome-text > button {
+  padding: 1.2vh;
+  border-radius: 4px;
+  background: #004aac;
+  color: white;
+  min-width: 200px;
+  border: white 1px solid;
+  font-size: 3vh;
+  margin-top: 28px;
+}
+
+.welcome-section > .welcome-text > button:hover {
+  background: #2196f3;
+}
+
+.footer {
+  background: #004aac;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer img {
+  width: 100px;
+  background: white;
+  border-radius: 50%;
+}
+
+.pulse-border a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+.pulse-border {
+  animation: pulse-border 2s infinite 5s;
+  animation-iteration-count: 3;
+  border-radius: 4px;
+}
+
+.service-section {
+  margin-top: 30px;
+  height: 521px;
+  overflow: hidden;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(249, 250, 251, 0.1),
+      rgba(249, 250, 251, 1)
+    ),
+    url(assets/image/service.png);
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
