@@ -10,6 +10,10 @@
     <meta author="Balakrishnan" />
     <meta description="Home page" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -1037,31 +1041,44 @@
     </style>
   </head>
   <body>
+    <header style="background-image: url('/assets/image/bg1.png')">
+      <div class="inner-header">
+        <a href="#">
+          <img
+            src="/assets/image/wft-logo-small.png"
+            alt="Web frontier technologies Logo"
+          />
+        </a>
+        <h1>Web Frontier Tech</h1>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li class="vdivider">|</li>
+            <li>
+              <a href="#software-services-section">Software Services</a>
+            </li>
+            <li class="vdivider">|</li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="vdivider">|</li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button
+          id="burger-button"
+          class="font-icon-btn burger"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="showHideSideMenu()"
+        >
+          <img class="burger-img" src="/assets/icons/burger-menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
     <main>
-      <header style="background-image: url('/assets/image/bg1.png')">
-        <div class="inner-header">
-          <a href="#">
-            <img
-              src="/assets/image/wft-logo-small.png"
-              alt="Web frontier technologies Logo"
-            />
-          </a>
-          <h1>Web Frontier Technologies</h1>
-          <nav>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li class="vdivider">|</li>
-              <li>
-                <a href="#software-services-section">Software Services</a>
-              </li>
-              <li class="vdivider">|</li>
-              <li><a href="#projects">Projects</a></li>
-              <li class="vdivider">|</li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
       <section class="welcome-section">
         <!-- <div class="overlay"></div>
         <img src="assets/image/wft-home.jpg" alt="" /> -->
@@ -1551,16 +1568,47 @@
         <div>© 2000 - 2025 Web Frontier Technologies.</div>
         <div>
           <span>Desing and Developed by</span>
-          <a
-            class="designed-by"
-            href="mailto:info@webfrontier.ca"
-          >
+          <a class="designed-by" href="mailto:info@webfrontier.ca">
             Web Frontier Technologies</a
           >.
         </div>
       </div>
     </footer>
+    <!-- <section class="vertical-menu" id="vertical-menu">
+      <a href="#" id="imagemenu" onclick="show('aboutus', false)">
+        <img
+          class="small-img"
+          src="/assets/image/logo.png"
+          alt="Aiyla"
+          height="50"
+        />
+      </a>
 
+      <button
+        class="font-icon-btn close"
+        onclick="showHideSideMenu()"
+        id="close-button"
+      >
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="show('/#')">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" onclick="show('/menu.html')">Menu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" onclick="show('/aboutus.html')">About Aiyla</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" onclick="show('/index.html#contact')">Contact</a>
+        </li>
+      </ul>
+    </section> -->
     <script type="text/javascript">
       document.addEventListener("scrollend", (event) => {
         console.log(`Document scrollend event fired!`);
