@@ -46,142 +46,6 @@
       }
     </style>
     <style>
-      *,
-      ::before,
-      ::after {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgb(59 130 246 / 0.5);
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style: ;
-      }
-      ::backdrop {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgb(59 130 246 / 0.5);
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style: ;
-      } /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
-      *,
-      ::after,
-      ::before {
-        box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
-        border-color: #e5e7eb;
-      }
-      ::after,
-      ::before {
-        --tw-content: "";
-      }
-      :host,
-      html {
-        line-height: 1.5;
-        -webkit-text-size-adjust: 100%;
-        -moz-tab-size: 4;
-        tab-size: 4;
-        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-feature-settings: normal;
-        font-variation-settings: normal;
-        -webkit-tap-highlight-color: transparent;
-      }
-      body {
-        margin: 0;
-        line-height: inherit;
-      }
       hr {
         height: 0;
         color: inherit;
@@ -334,10 +198,10 @@
         opacity: 1;
         color: #9ca3af;
       }
-      [role="button"],
+      /* [role="button"],
       button {
         cursor: pointer;
-      }
+      } */
       :disabled {
         cursor: default;
       }
@@ -352,11 +216,11 @@
         display: block;
         vertical-align: middle;
       }
-      img,
+      /* img,
       video {
         max-width: 100%;
         height: auto;
-      }
+      } */
       [hidden]:where(:not([hidden="until-found"])) {
         display: none;
       }
@@ -1042,7 +906,7 @@
   </head>
   <body>
     <header style="background-image: url('/assets/image/bg1.png')">
-      <div class="inner-header">
+      <div class="inner-header banner-img" >
         <a href="#">
           <img
             src="/assets/image/wft-logo-small.png"
@@ -1050,7 +914,7 @@
           />
         </a>
         <h1>Web Frontier Tech</h1>
-        <nav class="navigation">
+        <!-- <nav class="navigation">
           <ul>
             <li><a href="#">About Us</a></li>
             <li class="vdivider">|</li>
@@ -1062,7 +926,7 @@
             <li class="vdivider">|</li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <button
           id="burger-button"
           class="font-icon-btn burger"
@@ -1089,8 +953,8 @@
             development, domain registration, and hosting services. We blend
             creativity with technology to build websites that are not only
             stunning but also reliable and easy to manage. Let us help you
-            create an online presence that stands out and supports your business
-            every step of the way.
+            create an online presence that stands out and supports your
+            business.
           </p>
           <button class="pulse-border">
             <a href="#software-services-section"> Get Started </a>
@@ -1487,7 +1351,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/digital-marketing.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1566,89 +1430,174 @@
     <footer class="footer">
       <div class="text-content">
         <div>© 2000 - 2025 Web Frontier Technologies.</div>
-        <div>
-          <span>Desing and Developed by</span>
+        <div class="design-develop">
+          <span>Design and Developed by</span>
           <a class="designed-by" href="mailto:info@webfrontier.ca">
             Web Frontier Technologies</a
           >.
         </div>
       </div>
     </footer>
-    <!-- <section class="vertical-menu" id="vertical-menu">
-      <a href="#" id="imagemenu" onclick="show('aboutus', false)">
-        <img
-          class="small-img"
-          src="/assets/image/logo.png"
-          alt="Aiyla"
-          height="50"
-        />
-      </a>
-
+    <section class="vertical-menu" id="vertical-menu">
       <button
         class="font-icon-btn close"
         onclick="showHideSideMenu()"
         id="close-button"
+        aria-label="close"
       >
-        <i class="fa fa-times" aria-hidden="true"></i>
+        <img
+          class="close-button"
+          src="/assets/icons/close.svg"
+          alt="Close"
+          aria-hidden="true"
+        />
       </button>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="show('/#')">Home</a>
+          <a class="nav-link" href="javascript:void(0)" onclick="show('/#')"
+            >Home</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" onclick="show('/menu.html')">Menu</a>
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#software-services-section')"
+            >Services</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" onclick="show('/aboutus.html')">About Aiyla</a>
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#projects')"
+            >Portfolio</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" onclick="show('/index.html#contact')">Contact</a>
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#contact')"
+            >Contact</a
+          >
         </li>
       </ul>
-    </section> -->
+      <div class="logo-section">
+        <a
+          href="javascript:void(0)"
+          id="imagemenu"
+          onclick="show('aboutus', false)"
+        >
+          <img
+            class="small-img"
+            src="/assets/image/wft-logo-small.png"
+            alt="Aiyla"
+            height="50"
+          />
+        </a>
+      </div>
+    </section>
     <script type="text/javascript">
-      document.addEventListener("scrollend", (event) => {
-        console.log(`Document scrollend event fired!`);
-        console.log(event);
-      });
+      // const body = document.body;
+      // const scrollUp = "scroll-up";
+      // const scrollDown = "scroll-down";
+      // let lastScroll = 0;
+      // let menuClicked = false;
+      // let categoryContainerHeight =
+      //   document.getElementById("category-container").offsetHeight;
 
-      // setTimeout(() => {
-      //   var burgerMenu = document.getElementById("burger-button");
-      //   burgerMenu.addEventListener("click", function (e) {
-      //     showHideSideMenu();
-      //   });
-      // }, 0);
-
-      // function showHideSideMenu() {
-      //   const verticalMenu = document.getElementById("vertical-menu");
-      //   if (verticalMenu) {
-      //     verticalMenu.classList.toggle("show");
+      // window.addEventListener("scroll", () => {
+      //   const currentScroll = window.pageYOffset;
+      //   console.log(`currentScroll: ${currentScroll}`);
+      //   if (currentScroll <= 0) {
+      //     // body.classList.remove(scrollUp);
+      //     console.log(`remove("menu-clicked")`);
+      //     menuClicked = false;
+      //     body.classList.remove("menu-clicked");
+      //     document.getElementsByTagName("h1")[0].style.paddingTop = "30px";
+      //     return;
       //   }
-      // }
 
-      // function show(name, isOnLoad) {
-      //   if (!isOnLoad) {
-      //     showHideSideMenu();
+      //   if (
+      //     currentScroll > lastScroll &&
+      //     !body.classList.contains("menu-clicked")
+      //   ) {
       //   }
-      //   alert("#" + name);
-      //   history.pushState({}, "", "#" + name);
-      //   var sectionElement = document.getElementById(name);
-      //   sectionElement.scrollIntoView({
-      //     behavior: "smooth",
-      //     block: "start",
-      //     inline: "nearest",
+
+      //   // if (
+      //   //   currentScroll > lastScroll &&
+      //   //   !body.classList.contains(scrollDown)
+      //   // ) {
+      //   //   // down
+      //   //   body.classList.remove(scrollUp);
+      //   //   body.classList.add(scrollDown);
+      //   // } else if (
+      //   //   currentScroll < lastScroll &&
+      //   //   body.classList.contains(scrollDown)
+      //   // ) {
+      //   //   // up
+      //   //   body.classList.remove(scrollDown);
+      //   //   body.classList.add(scrollUp);
+      //   // }
+      //   lastScroll = currentScroll;
+
+      //   if (!body.classList.contains("menu-clicked")) {
+      //     menuClicked = true;
+      //     body.classList.add("menu-clicked");
+      //     document.getElementsByTagName("h1")[0].style.paddingTop =
+      //       (categoryContainerHeight + 32) + "px";
+      //   }
+      //   //set offset to first h1
+      //   console.log(categoryContainerHeight);
+      //   // document.getElementsByTagName("h1")[0].style.paddingTop =
+      //   //   categoryContainerHeight + "px";
+      // });
+
+      // function categoryClick(el, category) {
+      //   if (!menuClicked) {
+      //     menuClicked = true;
+      //     body.classList.add("menu-clicked");
+      //   }
+      //   console.log(`#${category}`);
+      //   Array.from(document.getElementsByClassName("link")).forEach(
+      //     (element) => {
+      //       if (element.classList.contains("active")) {
+      //         element.classList.remove("active");
+      //       }
+      //     }
+      //   );
+
+      //   el.classList.add("active");
+      //   // window.scrollTo(`#${category}`);
+      //   Array.from(document.getElementsByTagName("h1")).forEach((element) => {
+      //     if (element.classList.contains("active")) {
+      //       element.classList.remove("active");
+      //     }
+      //     console.info(element);
+      //     element.style.paddingTop = "30px";
       //   });
+
+      //   const h1Elem = document.getElementById(category);
+      //   h1Elem.classList.add("active");
+      //   h1Elem.style.paddingTop = categoryContainerHeight + "px";
+      //   h1Elem.scrollIntoView();
       // }
 
-      // window.dataLayer = window.dataLayer || [];
-      // function gtag() {
-      //   dataLayer.push(arguments);
-      // }
-      // gtag("js", new Date());
-      // gtag("config", "UA-162092299-1");
+      function showHideSideMenu() {
+        const verticalMenu = document.getElementById("vertical-menu");
+        if (verticalMenu) {
+          verticalMenu.classList.toggle("show");
+        }
+      }
+
+      function show(name) {
+        showHideSideMenu();
+        window.location.href = name;
+      }
     </script>
   </body>
 </html>
