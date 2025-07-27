@@ -331,7 +331,7 @@ header > .inner-header > h1 {
   color: #fff;
   padding: 20px;
   border-radius: 10px 10px 0 0;
-  background-position: center;
+  background-position: top;
 }
 
 /* .font-icon-btn.burger {

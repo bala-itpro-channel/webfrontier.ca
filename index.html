@@ -10,10 +10,7 @@
     <meta author="Balakrishnan" />
     <meta description="Home page" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
+
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -906,7 +903,7 @@
   </head>
   <body>
     <header style="background-image: url('/assets/image/bg1.png')">
-      <div class="inner-header banner-img" >
+      <div class="inner-header banner-img">
         <a href="#">
           <img
             src="/assets/image/wft-logo-small.png"
@@ -1015,7 +1012,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/web-design.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1070,7 +1067,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/web-development.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1125,7 +1122,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/ui-ux.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1180,7 +1177,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/e-commerce.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1235,7 +1232,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/brand.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1290,7 +1287,7 @@
                 </p>
                 <div class="mt-4">
                   <a
-                    href="#contact"
+                    href="/search-engine-optimization-seo.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                   >
                     Learn more
@@ -1502,91 +1499,6 @@
       </div>
     </section>
     <script type="text/javascript">
-      // const body = document.body;
-      // const scrollUp = "scroll-up";
-      // const scrollDown = "scroll-down";
-      // let lastScroll = 0;
-      // let menuClicked = false;
-      // let categoryContainerHeight =
-      //   document.getElementById("category-container").offsetHeight;
-
-      // window.addEventListener("scroll", () => {
-      //   const currentScroll = window.pageYOffset;
-      //   console.log(`currentScroll: ${currentScroll}`);
-      //   if (currentScroll <= 0) {
-      //     // body.classList.remove(scrollUp);
-      //     console.log(`remove("menu-clicked")`);
-      //     menuClicked = false;
-      //     body.classList.remove("menu-clicked");
-      //     document.getElementsByTagName("h1")[0].style.paddingTop = "30px";
-      //     return;
-      //   }
-
-      //   if (
-      //     currentScroll > lastScroll &&
-      //     !body.classList.contains("menu-clicked")
-      //   ) {
-      //   }
-
-      //   // if (
-      //   //   currentScroll > lastScroll &&
-      //   //   !body.classList.contains(scrollDown)
-      //   // ) {
-      //   //   // down
-      //   //   body.classList.remove(scrollUp);
-      //   //   body.classList.add(scrollDown);
-      //   // } else if (
-      //   //   currentScroll < lastScroll &&
-      //   //   body.classList.contains(scrollDown)
-      //   // ) {
-      //   //   // up
-      //   //   body.classList.remove(scrollDown);
-      //   //   body.classList.add(scrollUp);
-      //   // }
-      //   lastScroll = currentScroll;
-
-      //   if (!body.classList.contains("menu-clicked")) {
-      //     menuClicked = true;
-      //     body.classList.add("menu-clicked");
-      //     document.getElementsByTagName("h1")[0].style.paddingTop =
-      //       (categoryContainerHeight + 32) + "px";
-      //   }
-      //   //set offset to first h1
-      //   console.log(categoryContainerHeight);
-      //   // document.getElementsByTagName("h1")[0].style.paddingTop =
-      //   //   categoryContainerHeight + "px";
-      // });
-
-      // function categoryClick(el, category) {
-      //   if (!menuClicked) {
-      //     menuClicked = true;
-      //     body.classList.add("menu-clicked");
-      //   }
-      //   console.log(`#${category}`);
-      //   Array.from(document.getElementsByClassName("link")).forEach(
-      //     (element) => {
-      //       if (element.classList.contains("active")) {
-      //         element.classList.remove("active");
-      //       }
-      //     }
-      //   );
-
-      //   el.classList.add("active");
-      //   // window.scrollTo(`#${category}`);
-      //   Array.from(document.getElementsByTagName("h1")).forEach((element) => {
-      //     if (element.classList.contains("active")) {
-      //       element.classList.remove("active");
-      //     }
-      //     console.info(element);
-      //     element.style.paddingTop = "30px";
-      //   });
-
-      //   const h1Elem = document.getElementById(category);
-      //   h1Elem.classList.add("active");
-      //   h1Elem.style.paddingTop = categoryContainerHeight + "px";
-      //   h1Elem.scrollIntoView();
-      // }
-
       function showHideSideMenu() {
         const verticalMenu = document.getElementById("vertical-menu");
         if (verticalMenu) {

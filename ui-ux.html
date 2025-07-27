@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Marketing - Web frontier technologies</title>
+    <meta keywords="HTML,CSS,XML,JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta author="Balakrishnan" />
+    <meta description="Digital marketing page" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .top-image {
+        background-image: linear-gradient(
+            to bottom,
+            transparent 80%,
+            rgb(255, 255, 255) 100%
+          ),
+          url(assets/image/services/ui-ux-design.jpg);
+        width: 1200px;
+        height: 501px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        color: #fff;
+        padding: 20px;
+        margin-top: 60px;
+      }
+      h1,
+      h2 {
+        color: var(--color-primary);
+      }
+      .wft-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 1200px;
+        gap: 20px;
+        margin: 16px 0 20px 0;
+      }
+      .wft-grid > section {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+      }
+      .wft-grid > section > h2 {
+        background: #f5f3f3;
+        padding: 10px;
+        margin: 0;
+        border-radius: 5px;
+      }
+      .wft-grid > section > div {
+        padding: 10px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background-image: url('/assets/image/bg1.png')">
+      <div class="inner-header">
+        <a href="#">
+          <img
+            src="/assets/image/wft-logo-small.png"
+            alt="Web frontier technologies Logo"
+          />
+        </a>
+        <h1>Web Frontier Tech</h1>
+        <button
+          id="burger-button"
+          class="font-icon-btn burger"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="showHideSideMenu()"
+        >
+          <img class="burger-img" src="/assets/icons/burger-menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div class="inner-header top-image"></div>
+        <h1>UI / UX Design</h1>
+        <div class="inner-header" style="flex-direction: column">
+          <p>
+            Looking for a seamless digital experience? Web Frontier Technologies
+            is here to make it happen! We believe in the power of great UI/UX
+            design and its ability to simplify complexities, stimulate user
+            interaction, and make your digital journey a breeze.
+          </p>
+        </div>
+        <h1>How we help you</h1>
+        <div class="inner-header" style="flex-direction: column">
+          <p>
+            At Web Frontier Technologies, Our team of expert UI/UX designers are
+            passionate about creating intuitive, user-friendly interfaces that
+            not only look stunning but also function flawlessly. We understand
+            that every pixel counts, and we're committed to ensuring that each
+            one works hard to bring your vision to life.
+          </p>
+          <p>
+            We don't just design; we create experiences. We understand that the
+            best UI/UX design is the one that goes unnoticed by the user because
+            it feels so natural. Our designs are not just about aesthetics;
+            they're about creating a seamless interaction between the user and
+            your digital platform.
+          </p>
+          <p>
+            With our UI/UX design services, we promise to deliver a digital
+            experience that's visually captivating, functionally efficient, and
+            incredibly user-friendly. So why wait? Let's create something
+            amazing together! Just <a href="/#contact"> contact us </a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="text-content">
+        <div>© 2000 - 2025 Web Frontier Technologies.</div>
+        <div class="design-develop">
+          <span>Design and Developed by</span>
+          <a class="designed-by" href="mailto:info@webfrontier.ca">
+            Web Frontier Technologies</a
+          >.
+        </div>
+      </div>
+    </footer>
+    <section class="vertical-menu" id="vertical-menu">
+      <button
+        class="font-icon-btn close"
+        onclick="showHideSideMenu()"
+        id="close-button"
+        aria-label="close"
+      >
+        <img
+          class="close-button"
+          src="/assets/icons/close.svg"
+          alt="Close"
+          aria-hidden="true"
+        />
+      </button>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" onclick="show('/#')"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#software-services-section')"
+            >Services</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#projects')"
+            >Portfolio</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript:void(0)"
+            onclick="show('/#contact')"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="logo-section">
+        <a
+          href="javascript:void(0)"
+          id="imagemenu"
+          onclick="show('aboutus', false)"
+        >
+          <img
+            class="small-img"
+            src="/assets/image/wft-logo-small.png"
+            alt="Aiyla"
+            height="50"
+          />
+        </a>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function showHideSideMenu() {
+        const verticalMenu = document.getElementById("vertical-menu");
+        if (verticalMenu) {
+          verticalMenu.classList.toggle("show");
+        }
+      }
+
+      function show(name) {
+        showHideSideMenu();
+        window.location.href = name;
+      }
+    </script>
+  </body>
+</html>
