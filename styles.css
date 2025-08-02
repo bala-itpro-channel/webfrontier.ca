@@ -58,6 +58,14 @@ header > .inner-header,
   min-height: 60px;
 }
 
+/* main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+} */
+
 .burger {
   margin-right: 10px;
   background: transparent;
@@ -476,4 +484,38 @@ header > .inner-header > h1 {
 
 button {
   padding: 0;
+}
+
+.inner-text {
+  padding: 20px;
+  flex-direction: column;
+}
+
+.inner-text p {
+  text-align: justify;
+}
+.inner-text:last-child {
+  padding-bottom: 20px;
+}
+
+main h1 {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.top-image {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 80%,
+      rgb(255, 255, 255) 100%
+    ),
+    url(assets/image/services/branding.jpg);
+  width: 1200px;
+  height: 501px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: #fff;
+  padding: 20px;
+  margin-top: 60px;
 }

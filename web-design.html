@@ -8,7 +8,19 @@
     <meta author="Balakrishnan" />
     <meta description="Digital marketing page" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2HPZN6S9Q1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-2HPZN6S9Q1");
+    </script>
     <style>
       .top-image {
         background-image: linear-gradient(
@@ -29,27 +41,6 @@
       h1,
       h2 {
         color: var(--color-primary);
-      }
-      .wft-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        max-width: 1200px;
-        gap: 20px;
-        margin: 16px 0 20px 0;
-      }
-      .wft-grid > section {
-        border: 1px solid lightgray;
-        border-radius: 5px;
-      }
-      .wft-grid > section > h2 {
-        background: #f5f3f3;
-        padding: 10px;
-        margin: 0;
-        border-radius: 5px;
-      }
-      .wft-grid > section > div {
-        padding: 10px;
-        text-align: justify;
       }
     </style>
   </head>
@@ -89,7 +80,7 @@
       >
         <div class="inner-header top-image"></div>
         <h1>Web Design</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             Looking to make your online presence felt? You've come to the right
             place! We're a software development company that's passionate about
@@ -113,14 +104,15 @@
           </p>
         </div>
         <h1>How we help you</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             At Web Frontier Technologies, Our team of expert web designers and
             developers are dedicated to creating websites that not only look
             great but also perform exceptionally. We use the latest technologies
             and design trends to ensure your website stands out from the crowd.
             We make sure to Implement SEO feature in your website which helps to
-            reach your targetted customers. Just <a href="/#contact"> contact us </a>
+            reach your targetted customers. Just
+            <a href="/#contact"> contact us </a>
           </p>
         </div>
       </section>
@@ -128,12 +120,6 @@
     <footer class="footer">
       <div class="text-content">
         <div>© 2000 - 2025 Web Frontier Technologies.</div>
-        <div class="design-develop">
-          <span>Design and Developed by</span>
-          <a class="designed-by" href="mailto:info@webfrontier.ca">
-            Web Frontier Technologies</a
-          >.
-        </div>
       </div>
     </footer>
     <section class="vertical-menu" id="vertical-menu">

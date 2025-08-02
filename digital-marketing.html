@@ -8,7 +8,19 @@
     <meta author="Balakrishnan" />
     <meta description="Digital marketing page" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2HPZN6S9Q1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-2HPZN6S9Q1");
+    </script>
     <style>
       .top-image {
         background-image: linear-gradient(
@@ -30,12 +42,14 @@
       h2 {
         color: var(--color-primary);
       }
+      .grid-container {
+        max-width: 1200px;
+      }
       .wft-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        max-width: 1200px;
         gap: 20px;
-        margin: 16px 0 20px 0;
+        margin: 16px 20px 20px 20px;
       }
       .wft-grid > section {
         border: 1px solid lightgray;
@@ -45,7 +59,8 @@
         background: #f6f6f6;
         padding: 10px;
         margin: 0;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
+        font-size: 1.2rem;
       }
       .wft-grid > section > div {
         padding: 10px;
@@ -63,19 +78,6 @@
           />
         </a>
         <h1>Web Frontier Tech</h1>
-        <!-- <nav class="navigation">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li class="vdivider">|</li>
-            <li>
-              <a href="#software-services-section">Software Services</a>
-            </li>
-            <li class="vdivider">|</li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="vdivider">|</li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </nav> -->
         <button
           id="burger-button"
           class="font-icon-btn burger"
@@ -102,7 +104,7 @@
       >
         <div class="inner-header top-image"></div>
         <h1>Digital Marketing</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             Digital marketing is a powerful tool in the modern business world.
             It's a dynamic approach that uses online-based digital technologies
@@ -112,7 +114,7 @@
           </p>
         </div>
         <h1>How we help you</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             At Web Frontier Technologies, we're all about helping our customers
             maximize their Return on Investment (ROI). How do we do it? By
@@ -120,74 +122,72 @@
             unique business. Our expertise in digital marketing has allowed us
             to witness first-hand the benefits our clients reap. From increased
             visibility to boosted sales, we're here to help you navigate the
-            business with confidence and success.  Just <a href="/#contact"> contact us </a>
+            business with confidence and success. Just
+            <a href="/#contact"> contact us </a>
           </p>
         </div>
         <h1>Our Digital Marketing Services</h1>
-        <div class="wft-grid">
-          <section>
-            <h2>Content Marketing</h2>
-            <div>
-              In the digital age, content is king. But not just any content -
-              we're talking about high-quality, engaging, and relevant content
-              that speaks directly to your audience. That's where content
-              marketing comes in.
-            </div>
-          </section>
-          <section>
-            <h2>Pay-Per-Click (PPC)</h2>
-            <div>
-              Pay-Per-Click (PPC) advertising, on the other hand, is your fast
-              track to getting noticed. It's all about investing in visibility,
-              with a promise of valuable returns.
-            </div>
-          </section>
-          <section>
-            <h2>PPC Marketing</h2>
-            <div>
-              In the digital age, content is king. But not just any content -
-              we're talking about high-quality, engaging, and relevant content
-              that speaks directly to your audience. That's where content
-              marketing comes in.
-            </div>
-          </section>
-          <section>
-            <h2>Email Marketing</h2>
-            <div>
-              Email Marketing is your direct line to your customers. It's about
-              delivering value right to their inboxes, one personalized message
-              at a time.
-            </div>
-          </section>
-          <section>
-            <h2>Social Media Marketing</h2>
-            <div>
-              Social Media Marketing is your ticket to the global conversation.
-              It's about creating content that resonates with your audience and
-              sparks meaningful interactions.
-            </div>
-          </section>
-          <section>
-            <h2>Email Marketing</h2>
-            <div>
-              In the digital age, content is king. But not just any content -
-              we're talking about high-quality, engaging, and relevant content
-              that speaks directly to your audience. That's where content
-              marketing comes in.
-            </div>
-          </section>
+        <div class="grid-container">
+          <div class="wft-grid">
+            <section>
+              <h2>Content Marketing</h2>
+              <div>
+                In the digital age, content is king. But not just any content -
+                we're talking about high-quality, engaging, and relevant content
+                that speaks directly to your audience. That's where content
+                marketing comes in.
+              </div>
+            </section>
+            <section>
+              <h2>Pay-Per-Click (PPC)</h2>
+              <div>
+                Pay-Per-Click (PPC) advertising, on the other hand, is your fast
+                track to getting noticed. It's all about investing in
+                visibility, with a promise of valuable returns.
+              </div>
+            </section>
+            <section>
+              <h2>Email Marketing</h2>
+              <div>
+                Email Marketing is your direct line to your customers. It's
+                about delivering value right to their inboxes, one personalized
+                message at a time.
+              </div>
+            </section>
+            <section>
+              <h2>Social Media Marketing</h2>
+              <div>
+                Social Media Marketing is your ticket to the global
+                conversation. It's about creating content that resonates with
+                your audience and sparks meaningful interactions.
+              </div>
+            </section>
+            <section>
+              <h2>Email Marketing</h2>
+              <div>
+                In the digital age, content is king. But not just any content -
+                we're talking about high-quality, engaging, and relevant content
+                that speaks directly to your audience. That's where content
+                marketing comes in.
+              </div>
+            </section>
+            <section>
+              <h2>SEO Marketing</h2>
+              <div>
+                Search Engine Optimization (SEO) focuses on improving a
+                website's visibility in search engine results pages (SERPs)
+                organically. This involves optimizing website content,
+                structure, and technical aspects to rank higher for relevant
+                keywords, attracting more organic traffic.
+              </div>
+            </section>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="text-content">
         <div>© 2000 - 2025 Web Frontier Technologies.</div>
-        <div class="design-develop">
-          <span>Design and Developed by</span>
-          <a class="designed-by" href="mailto:info@webfrontier.ca">
-            Web Frontier Technologies</a
-          >.
-        </div>
       </div>
     </footer>
     <section class="vertical-menu" id="vertical-menu">

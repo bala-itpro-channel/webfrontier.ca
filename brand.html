@@ -8,48 +8,23 @@
     <meta author="Balakrishnan" />
     <meta description="Digital marketing page" />
     <link rel="stylesheet" href="styles.css" />
-
-    <style>
-      .top-image {
-        background-image: linear-gradient(
-            to bottom,
-            transparent 80%,
-            rgb(255, 255, 255) 100%
-          ),
-          url(assets/image/services/branding.jpg);
-        width: 1200px;
-        height: 501px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        color: #fff;
-        padding: 20px;
-        margin-top: 60px;
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2HPZN6S9Q1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
+
+      gtag("config", "G-2HPZN6S9Q1");
+    </script>
+    <style>
       h1,
       h2 {
         color: var(--color-primary);
-      }
-      .wft-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        max-width: 1200px;
-        gap: 20px;
-        margin: 16px 0 20px 0;
-      }
-      .wft-grid > section {
-        border: 1px solid lightgray;
-        border-radius: 5px;
-      }
-      .wft-grid > section > h2 {
-        background: #f5f3f3;
-        padding: 10px;
-        margin: 0;
-        border-radius: 5px;
-      }
-      .wft-grid > section > div {
-        padding: 10px;
-        text-align: justify;
       }
     </style>
   </head>
@@ -89,7 +64,7 @@
       >
         <div class="inner-header top-image"></div>
         <h1>Brand Identity</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             Branding is all about creating a unique identity for your business
             that resonates with your target audience. Here are some actionable
@@ -149,7 +124,7 @@
           </p>
         </div>
         <h1>How we help you</h1>
-        <div class="inner-header" style="flex-direction: column">
+        <div class="inner-header inner-text">
           <p>
             Looking to make your brand stand out? Web fronter technologies's
             branding service is here to help! We'll work with you to create a
@@ -164,12 +139,6 @@
     <footer class="footer">
       <div class="text-content">
         <div>© 2000 - 2025 Web Frontier Technologies.</div>
-        <div class="design-develop">
-          <span>Design and Developed by</span>
-          <a class="designed-by" href="mailto:info@webfrontier.ca">
-            Web Frontier Technologies</a
-          >.
-        </div>
       </div>
     </footer>
     <section class="vertical-menu" id="vertical-menu">
