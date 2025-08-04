@@ -1,6 +1,6 @@
 :root {
   --color-gray: #393c41;
-  --mx-width: 1200px;
+  --mx-width: 1216px;
   --color-primary: #004aac;
   --color-secondary: #024398;
 }
@@ -63,7 +63,7 @@ header > .inner-header,
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1216px;
 } */
 
 .burger {
@@ -510,7 +510,7 @@ main h1 {
       rgb(255, 255, 255) 100%
     ),
     url(assets/image/services/branding.jpg);
-  width: 1200px;
+  width: 1216px;
   height: 501px;
   background-size: cover;
   background-repeat: no-repeat;
