@@ -30,13 +30,27 @@
           ),
           url(assets/image/services/digital-marketing.jpg);
         width: 1216px;
-        height: 501px;
+        height: auto;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         color: #fff;
         padding: 20px;
         margin-top: 60px;
+        min-height: 450px;
+      }
+      @media (max-width: 650px) {
+        .top-image {
+          background-image: linear-gradient(
+              to bottom,
+              transparent 80%,
+              rgb(255, 255, 255) 100%
+            ),
+            url(assets/image/services/digital-marketing-mini.jpg);
+          width: 100%;
+          height: auto;
+          min-height: 400px;
+        }
       }
       h1,
       h2 {
