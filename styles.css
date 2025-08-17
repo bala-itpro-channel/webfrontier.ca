@@ -332,46 +332,35 @@ header > .inner-header > h1 {
 
 .service-section {
   margin-top: 30px;
-  height: 521px;
+  height: auto;
   overflow: hidden;
   background-image: linear-gradient(
       to bottom,
       rgba(249, 250, 251, 0.1),
       rgba(249, 250, 251, 1)
     ),
-    url(assets/image/service.png);
+    url(assets/image/service.jpg);
   width: 100%;
   background-size: cover;
   color: #fff;
   padding: 20px;
   border-radius: 10px 10px 0 0;
   background-position: top;
+  min-height: 440px;
+}
+@media (max-width: 650px) {
+  .service-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(249, 250, 251, 0.1),
+        rgba(249, 250, 251, 1)
+      ),
+      url(assets/image/service-sm.jpg);
+    min-height: 250px;
+  }
 }
 
-/* .font-icon-btn.burger {
-  display: none;
-} */
-
-/* .burger {
-  display: none;
-} */
-
 @media (max-width: 800px) {
-  /* .welcome-section > .welcome-text {
-    padding-top: 100px;
-  }
-  a.logo {
-    padding: 10px;
-  }
-  .top-links {
-    display: none !important;
-  }
-  a.logo > .big-img {
-    display: none;
-  }
-  a.logo > .small-img {
-    display: block;
-  } */
   .font-icon-btn.burger {
     display: block;
   }
