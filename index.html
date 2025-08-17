@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta author="Balakrishnan" />
-    <meta description="Webfrontier technologies - Web design & development, Moile app development, Digital marketing." />
+    <meta
+      description="Webfrontier technologies - Web design & development, Moile app development, Digital marketing."
+    />
     <meta http-equiv="Cache-Control" content="max-age=31536000, public" />
     <link rel="stylesheet" href="styles.css" />
     <!-- Link Swiper's CSS -->
@@ -1047,6 +1049,7 @@
                   <a
                     href="/web-design.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="Custom Web Design"
                   >
                     Learn more
                     <svg
@@ -1104,6 +1107,7 @@
                   <a
                     href="/web-design.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="Wordpress website"
                   >
                     Learn more
                     <svg
@@ -1159,6 +1163,7 @@
                   <a
                     href="/web-development.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="Web Development"
                   >
                     Learn more
                     <svg
@@ -1214,6 +1219,7 @@
                   <a
                     href="/ui-ux.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="UI/UX Design"
                   >
                     Learn more
                     <svg
@@ -1269,6 +1275,7 @@
                   <a
                     href="/e-commerce.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="E-Commerce Solutions"
                   >
                     Learn more
                     <svg
@@ -1324,6 +1331,7 @@
                   <a
                     href="/brand.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="Brand Identity"
                   >
                     Learn more
                     <svg
@@ -1379,6 +1387,7 @@
                   <a
                     href="/search-engine-optimization-seo.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="SEO Optimization"
                   >
                     Learn more
                     <svg
@@ -1440,6 +1449,7 @@
                   <a
                     href="/digital-marketing.html"
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
+                    aria-label="Digital Marketing"
                   >
                     Learn more
                     <svg
@@ -1484,37 +1494,53 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="https://aiylarestaurant.com/" target="_blank">
+                  <a
+                    href="https://aiylarestaurant.com/"
+                    target="_blank"
+                    aria-label="aiyla restaurant mobile layout image"
+                  >
                     <img
                       src="/assets/image/portfolio/aiyla-mobile.png"
-                      alt=""
+                      alt="aiyla restaurant mobile layout image"
                       loading="lazy"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="https://aiylarestaurant.com/" target="_blank">
+                  <a
+                    href="https://aiylarestaurant.com/"
+                    target="_blank"
+                    aria-label="aiyla restaurant tablet layout image"
+                  >
                     <img
                       src="/assets/image/portfolio/aiyla-tablet.png"
-                      alt=""
+                      alt="aiyla restaurant tablet layout image"
                       loading="lazy"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="https://aiylarestaurant.com/" target="_blank">
+                  <a
+                    href="https://aiylarestaurant.com/"
+                    target="_blank"
+                    aria-label="aiyla restaurant web layout image"
+                  >
                     <img
                       src="/assets/image/portfolio/aiyla-desktop.png"
-                      alt=""
+                      alt="aiyla restaurant web layout image"
                       loading="lazy"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="https://matrimony.vallambar.org/" target="_blank">
+                  <a
+                    href="https://matrimony.vallambar.org/"
+                    target="_blank"
+                    aria-label="vallambar matrimony screenshot"
+                  >
                     <img
                       src="/assets/image/portfolio/matrimony-desktop.png"
-                      alt=""
+                      alt="vallambar matrimony screenshot"
                       loading="lazy"
                     />
                   </a>
@@ -1523,10 +1549,11 @@
                   <a
                     href="https://matrimony.vallambar.org/#/home"
                     target="_blank"
+                    aria-label="vallambar matrimony registration page screenshot"
                   >
                     <img
                       src="/assets/image/portfolio/matrimony-desktop-registration.png"
-                      alt=""
+                      alt="vallambar matrimony registration page screenshot"
                       loading="lazy"
                     />
                   </a>
@@ -1535,19 +1562,24 @@
                   <a
                     href="https://matrimony.vallambar.org/#/registration"
                     target="_blank"
+                    aria-label="vallambar matrimony registration form screenshot"
                   >
                     <img
                       src="/assets/image/portfolio/matrimony-desktop-registration-input.png"
-                      alt=""
+                      alt="vallambar matrimony registration form screenshot"
                       loading="lazy"
                     />
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="https://webfrontier.ca/" target="_blank">
+                  <a
+                    href="https://webfrontier.ca/"
+                    target="_blank"
+                    aria-label="webfrontier technologies home page screenshot"
+                  >
                     <img
                       src="/assets/image/portfolio/wft-desktop.png"
-                      alt=""
+                      alt="webfrontier technologies home page screenshot"
                       loading="lazy"
                     />
                   </a>
@@ -1678,18 +1710,17 @@
         window.location.href = name;
       }
     </script>
-
     <!-- Swiper JS -->
     <script
-      defer
+      async
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
 
     <!-- Include plugin after Swiper -->
     <script>
       /* ========
-Debugger plugin, simple demo plugin to console.log some of callbacks
-======== */
+        Debugger plugin, simple demo plugin to console.log some of callbacks
+      ======== */
       function myPlugin({ swiper, extendParams, on }) {
         extendParams({
           debugger: false,
@@ -1697,80 +1728,82 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
 
         on("init", () => {
           if (!swiper.params.debugger) return;
-          console.log("init");
+          // console.log("init");
         });
         on("click", (swiper, e) => {
           if (!swiper.params.debugger) return;
-          console.log("click");
+          // console.log("click");
         });
         on("tap", (swiper, e) => {
           if (!swiper.params.debugger) return;
-          console.log("tap");
+          // console.log("tap");
         });
         on("doubleTap", (swiper, e) => {
           if (!swiper.params.debugger) return;
-          console.log("doubleTap");
+          // console.log("doubleTap");
         });
         on("sliderMove", (swiper, e) => {
           if (!swiper.params.debugger) return;
-          console.log("sliderMove");
+          // console.log("sliderMove");
         });
         on("slideChange", () => {
           if (!swiper.params.debugger) return;
-          console.log(
-            "slideChange",
-            swiper.previousIndex,
-            "->",
-            swiper.activeIndex
-          );
+          // console.log(
+          //   "slideChange",
+          //   swiper.previousIndex,
+          //   "->",
+          //   swiper.activeIndex
+          // );
         });
         on("slideChangeTransitionStart", () => {
           if (!swiper.params.debugger) return;
-          console.log("slideChangeTransitionStart");
+          // console.log("slideChangeTransitionStart");
         });
         on("slideChangeTransitionEnd", () => {
           if (!swiper.params.debugger) return;
-          console.log("slideChangeTransitionEnd");
+          // console.log("slideChangeTransitionEnd");
         });
         on("transitionStart", () => {
           if (!swiper.params.debugger) return;
-          console.log("transitionStart");
+          // console.log("transitionStart");
         });
         on("transitionEnd", () => {
           if (!swiper.params.debugger) return;
-          console.log("transitionEnd");
+          // console.log("transitionEnd");
         });
         on("fromEdge", () => {
           if (!swiper.params.debugger) return;
-          console.log("fromEdge");
+          // console.log("fromEdge");
         });
         on("reachBeginning", () => {
           if (!swiper.params.debugger) return;
-          console.log("reachBeginning");
+          // console.log("reachBeginning");
         });
         on("reachEnd", () => {
           if (!swiper.params.debugger) return;
-          console.log("reachEnd");
+          // console.log("reachEnd");
         });
       }
     </script>
 
     <script>
       // Init Swiper
-      var swiper = new Swiper(".swiper", {
-        // Install Plugin To Swiper
-        modules: [myPlugin],
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        // Enable debugger
-        debugger: true,
-      });
+      setTimeout(() => {
+        var swiper = new Swiper(".swiper", {
+          // Install Plugin To Swiper
+          modules: [myPlugin],
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          // Enable debugger
+          debugger: false,
+        });
+      }, 1500);
     </script>
   </body>
 </html>
