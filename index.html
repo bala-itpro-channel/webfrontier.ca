@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>
-      Web design & development, Mobile app development, Digital marketing -
-      Webfrontier
+      Web Frontier Technologies - Web design & development, Mobile app
+      development, Digital marketing
     </title>
-    <meta keywords="HTML,CSS,XML,JavaScript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      keywords="wrbfrontier.ca, Web design, web development, Mobile app development, Digital marketing"
+    />
+    <meta
+      name="description"
+      content="Webfrontier technologies - Canada's web solution company provide services such as Web design & development, Moile app development, Digital marketing for small business"
+    />
+    <meta
+      property="og:title"
+      content="Web Frontier Technologies - Web design & development, Mobile app development, Digital marketing"
+    />
+    <meta
+      property="og:description"
+      description="Webfrontier technologies - Canada's web solution company provide services such as Web design & development, Moile app development, Digital marketing for small business"
+    />
+    <meta
+      property="og:image"
+      content="https://webfrontier.ca/assets/image/wft-logo-small.png"
+    />
+    <meta property="og:url" content="https://webfrontier.ca" />
     <meta charset="UTF-8" />
     <meta author="Balakrishnan" />
-    <meta
-      description="Webfrontier technologies - Web design & development, Moile app development, Digital marketing."
-    />
     <meta http-equiv="Cache-Control" content="max-age=31536000, public" />
     <link rel="stylesheet" href="styles.css" />
     <!-- Link Swiper's CSS -->
@@ -957,7 +974,7 @@
             alt="Web frontier technologies Logo"
           />
         </a>
-        <h1>Web Frontier Tech</h1>
+        <h1>Web Frontier Technologies</h1>
         <button
           id="burger-button"
           class="font-icon-btn burger"
@@ -976,7 +993,7 @@
     <main class="bg-gray-50">
       <section class="welcome-section">
         <div class="welcome-text">
-          <h1>Bring Your Digital Vision to Life</h1>
+          <h1>Crafting Digital Solutions That Inspire and Perform.</h1>
           <p>
             Transform your ideas into reality with our expert web design,
             development, domain registration, and hosting services. We blend
@@ -985,8 +1002,11 @@
             create an online presence that stands out and supports your
             business.
           </p>
-          <button class="pulse-border">
-            <a href="#software-services-section"> Get Started </a>
+          <button
+            class="pulse-border3"
+            onclick="show('/#software-services-section', event, true)"
+          >
+            Get Started
           </button>
         </div>
       </section>
@@ -1051,7 +1071,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="Custom Web Design"
                   >
-                    Learn more
+                    Custom Web Design
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1109,7 +1129,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="Wordpress website"
                   >
-                    Learn more
+                    Wordpress Web Design
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1165,7 +1185,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="Web Development"
                   >
-                    Learn more
+                    Web Development
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1221,7 +1241,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="UI/UX Design"
                   >
-                    Learn more
+                    UI/UX Design
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1277,7 +1297,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="E-Commerce Solutions"
                   >
-                    Learn more
+                    E-Commerce Solutions
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1333,7 +1353,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="Brand Identity"
                   >
-                    Learn more
+                    Brand Identity
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1389,7 +1409,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="SEO Optimization"
                   >
-                    Learn more
+                    SEO Optimization
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1451,7 +1471,7 @@
                     class="text-blue-600 hover:text-blue-500 font-medium flex items-center"
                     aria-label="Digital Marketing"
                   >
-                    Learn more
+                    Digital Marketing
                     <svg
                       class="ml-1 w-5 h-5"
                       fill="none"
@@ -1691,16 +1711,14 @@
       </button>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)" onclick="show('/#')"
-            >Home</a
-          >
+          <a class="nav-link" href="/home" onclick="show('/#', event)">Home</a>
         </li>
 
         <li class="nav-item">
           <a
             class="nav-link"
-            href="javascript:void(0)"
-            onclick="show('/#software-services-section')"
+            href="/software-services-section"
+            onclick="show('/#software-services-section', event)"
             >Services</a
           >
         </li>
@@ -1708,27 +1726,20 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="javascript:void(0)"
-            onclick="show('/#projects')"
+            href="/projects"
+            onclick="show('/#projects', event)"
             >Portfolio</a
           >
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="javascript:void(0)"
-            onclick="show('/#contact')"
+          <a class="nav-link" href="/contact" onclick="show('/#contact', event)"
             >Contact</a
           >
         </li>
       </ul>
       <div class="logo-section">
-        <a
-          href="javascript:void(0)"
-          id="imagemenu"
-          onclick="show('aboutus', false)"
-        >
+        <a href="/aboutus" id="imagemenu" onclick="show('aboutus', event)">
           <img
             class="small-img"
             src="/assets/image/wft-logo-small.png"
@@ -1746,8 +1757,11 @@
         }
       }
 
-      function show(name) {
-        showHideSideMenu();
+      function show(name, event, internalPage) {
+        event.preventDefault();
+        if (!internalPage) {
+          showHideSideMenu();
+        }
         window.location.href = name;
       }
     </script>

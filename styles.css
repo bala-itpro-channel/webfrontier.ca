@@ -514,3 +514,8 @@ main h1 {
   padding: 20px;
   margin-top: 60px;
 }
+
+.swiper-pagination-bullet {
+  min-width: 24px;
+  min-height: 24px;
+}
